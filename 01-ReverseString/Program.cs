@@ -9,10 +9,10 @@ class Program
         string reverseString = "";
 
         //I start at the end of the string "array", so I can assing the last letter from the string to the first position of the new string variable"
-        for (int x = input.Length-1; x >= 0; x--)
+        for (int x = 0; x < input.Length; x++)
         {
             
-            reverseString += input[x];
+            reverseString += input[(input.Length - 1) - x];
         }
         
         Console.WriteLine("Your string: " +input+ " in reverse is: " + reverseString);
